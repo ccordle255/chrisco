@@ -1,60 +1,218 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
-
-<header class="hero-unit" id="banner">
+<section id="banner" class="hero-unit">
   <div class="container">
-    <h1>ChrisCo</h1>
-    <p class="lead">Web enthusiast. I'm mobile friendly and responsive!</p>
+    <h1>Hello there. I'm ChrisCo.</h1>
+    <hr class="slideRight">
+    <p class="lead">Web enthusiast. Maker. Let's build something together!</p>
   </div>
-</header>
+</section>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 m6 s12">
+        <h3>Front end expert.</h3>
+        <p>
+          I'm a front-end expert with substantial experience building full-stack web
+          applications in Node.js and .NET.  I'm enthusiastic about JavaScript and have dabbled
+          in most of the MV* frameworks including Angular, Knockout, Durandal, Meteor, and React.
+        </p>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h1 class="page-header">Code Camp 2015</h1>
-      <p>
-        Leaving work at <a href="http://www.ultimatesoftware.com/">Ultimate Software</a> on a Friday evening, one of my coworkers casually mentioned to me that there was going to be a huge event with 1000+ developers from all over South Florida at a <a href="http://www.fladotnet.com/codecamp/">free code camp</a> the next day.  Topics were to range from .NET, Azure, JS, Mobile Development, and more, with over 50 speakers giving talks.  The best news was that it was literally right down the street from my house, so no excuses not to go!
-      </p>
-      <p>
-        Arriving at the event this morning, I found myself surrounded by a larger developer community than I suspected South Florida to have.  It turned out that nearly 1500 people had registered for the event.  Nova Southeastern University's Carl DeSantis Building was teeming with activity, filled with booths, coffee, and bagels as developers milled around the common area, waiting for the sessions to begin.  
-      </p>
-      <p>
-        There were 13 tracks one hour tracks going nearly the entire day.  Being an Angular fan, I chose to attend <a href="http://www.johnpapa.net/">John Papa's</a> "Angular In an Hour" session.  I've been a fan of John Papa's Pluralsight videos for nearly three years, when I was first learning <a href="http://knockoutjs.com/">Knockout.JS</a>.  He has a way of making complex concepts accessible with his casual presentation style.  His courses often include custom examples such as his Hot Towel SPA framework which serve to simplify things even further.  This <a href="https://angularjs.org/">Angular</a> session was a great introduction to the popular Google framework that has dominated the MV* JavaScript scene for a couple of years now.
-      </p>
-      <p>
-        The class was great, but as an advanced Angular user, there was little new material for me to learn there.  The next session in that room was to cover JS testing with Jasmine by Jonas Stawski, which is an excellent testing library for front-end code, but I chose to instead check out what was going on over in the Azure track.  
-      </p>
-      <p>
-        Bayer White was giving a talk on "Riding Microsoft's Service Bus to the Cloud and Back".  In this class, I got a high level understanding of how to use messaging queues to process transactions, data syncs, message pushes and more.  Azure has some nifty features that make this sort of process easy to digest and perhaps as importantly, easy to scale.  Following this talk I headed back over to John Papa's second session, which covered Gulp.
-      </p>
-      <p>
-        <a href="http://gulpjs.com/">Gulp</a> is a build tool based on Node.JS.  It can automate any task you give it, from JS linting and minification to TypeScript and CoffeeScript compilation.  You can execute templates, to say, generate new controllers or routes on the client side or server side.  These templates will scaffold out the code for your new API endpoint.  All of these features run in a standard command line or terminal and there are thousands of pre-built ones for you to download and use on NPM.  Other advanced uses John showed off were auto-reload, which enables you to edit your JS in your favorite editor and have any open browsers which are running your local webpage get automatically refreshed once you save.  These nice features speed up development and make Gulp a powerful tool.
-      </p>
-      <p>
-        I have been using <a href="http://gruntjs.com/">Grunt</a> for nearly a year now, and John Papa was able to clearly describe the difference between the two tools, illustrating that Gulp runs like a program, with the ability to chain tasks before writing back to the file system.  Grunt operates off of config files which are great for getting started, but tend to get unmaintainable as a build system grows in complexity.  After seeing the power and simplicity of Gulp, I will definitely be switching to this tool for my workflow.
-      </p>
-      <p>
-        Other talks I got to check out covered beacons, such as <a href="http://estimote.com/">Estimote</a>, and their potential uses in mobile applications.  I'm familiar with the uses that cover indoor location, which provides users a simple way to navigate around a building and locate products they would like to find.  One of the first uses people seem to jump to, and indeed, that Estimote promotes on their site, is a spam bot for hawking deals to smart phone users as they try to shop in relative peace and anonymity in a retail setting.  Hey, sometimes, I love spam.  But I found myself pondering potential social applications of location-aware beacons.  Could they be used at a club for an on-site Tinder?  Can we invent social games that people would play with only people in range of these sensors?  I think these sort of social experiences have yet to be fully explored with Internet of Things devices such as this.  Technology like this really gets my creative juices flowing!
-      </p>
-      <p>
-        Another talk covered <a href="http://xamarin.com/">Xamarin</a>, which I have read about as a great way to make cross platform mobile applications using C# and XAML.  For rotaChat, I am heavily considering the use of Xamarin to build out the mobile experience, given that it provides 100% of the native functionality of an Android or iOS app with a language I know and enjoy.  This talk reaffirmed to me the capabilities that Xamarin has, but I also recently learned about Facebook's React.js Native library that is soon to be released and open-sourced.  React Native is supposed to be able to provide the same features as Xamarin, native runtime, cross-platform mobile app development with an HTML/JS core.  Exciting times in mobile development, to be sure.
-      </p>
-      <p>
-        I caught the tail end of a talk by Ibis Arrastia, a Chapter Leader of <a href="http://www.girldevelopit.com/">Girl Develop It</a> (GDI), a society for mentoring women to learn how to code.  She was providing great insight to women and showing off a few of the rising female stars in the South Florida tech community.
-      </p>
-      <p>
-        The last talk I attended covered Azure Machine Learning, a cloud-based service for piping data streams into battle-tested and proven machine learning algorithms, providing predictive analytics for a wide range of business applications.  When it comes to Machine Learning, I am like Jon Snow, I know nothing.  I was super impressed with Azure's simple, drag-and-drop interface for connecting algorithms and datasets.  Within a few minutes, you can produce a public endpoint with generated sample code for integration with your website in three different languages!  This talk opened my eyes to the fact that you can know nothing and still make sense out of big data.
-      </p>
-      <p>
-        Super encouraged by the activity going on in the South Florida .NET Community!
-      </p>
+      </div>
+      <div class="col l6  m6  hide-on-small-only center-align">
+        <h3><img src="assets/images/html-css-js.png" class="responsive-img"></h3>
+      </div>
     </div>
   </div>
-</div>
-
-<footer class="footer">
+</section>
+<section id="projects" class="valign-wrapper">
+  <div class="container valign">
+    <h3 class="center-align">Projects</h3>
+    <hr>
+  </div>
+</section>
+<section id="project-list">
   <div class="container">
-      <p>Clever footer here |
-        <a href="https://twitter.com/chrisco255">@ChrisCo255</a> |
-         Built with <a href="https://github.com/DaftMonk/generator-angular-fullstack">Yeoman Angular Fullstack Generator</a></p>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/ultipro_sm.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">UltiPro <i class="mdi-navigation-more-vert right"></i></span>
+            <p>Custom Form Editor</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">UltiPro - Meta Page Editor <i class="mdi-navigation-close right"></i></span>
+            <p>
+              Currently part of Ultimate Software's core product, UltiPro, I was tasked to create a drag and drop form editor
+              which allowed customers to create custom pages and additional custom fields.  I created the initial prototype and worked with others
+              on my team to refine and deliver the complete functionality.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="http://www.ultimatesoftware.com" target="_blank">WEBSITE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/partender_sm.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Partender <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Web Portal, Landing Page, and Sign Up
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Partender <i class="mdi-navigation-close right"></i></span>
+            <p>Partender was a startup I worked on for over 10 months.  Besides helping with the organization and planning of the product and the business,
+              I implemented the web portal, the landing page and the sign up form for customers.  The web portal was implemented as a single page app
+              using Durandal and KnockoutJS, along with several UI libs including Kendo UI and Wijmo for building the graphs and spreadsheets.</p>
+          </div>
+          <div class="card-action">
+            <a href="http://www.partender.com" target="_blank">WEBSITE</a>
+            <a href="assets/images/partender.jpg" target="_blank">SCREENSHOT 1</a>
+            <a href="assets/images/landingScreen-shot-2013-10-22-at-5.jpg" target="_blank">SCREENSHOT 2</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/rotachat1_sm.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">RotaChat <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Full Stack Video Chat Application
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">RotaChat <i class="mdi-navigation-close right"></i></span>
+            <p>
+              RotaChat was my senior project during Spring 2014 at University of Florida.  It is a full-stack MEAN application, making
+              use of Angular and Node as well as a Mongo database.  It is a video chat application designed to create conversations around topics of
+              discussion.  Each participant records video messages in a round table format.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="assets/images/rotachat1.png" target="_blank">SCREENSHOT</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/testflow_sm.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">TestFlow <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Front End Prototype for Spec'ing Out Manual Tests
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">TestFlow <i class="mdi-navigation-close right"></i></span>
+            <p>
+              A prototype I built for the VTeam at Ultimate Software, this application is designed to make spec'ing out manual tests easier.
+              Inspired by <a href="https://www.workflowy.com">Workflowy</a>, it is essentially a text editor with a nested bullet structure. Users
+              can simply add multiple steps to a test case, and move that step up and down the hierarchy with a simple tab or shift+tab.  Users can also drill
+              down into a particular case, step, or substep by clicking on its bullet.
+            </p>
+            <p>
+              <a href="http://testflow.azurewebsites.net/" target="_blank">Live Demo</a>
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="http://testflow.azurewebsites.net/" target="_blank">DEMO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/r2pg_sm.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">R2-PG <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              HTML5 Video Game w/ AI Built on CreateJS
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">R2-PG <i class="mdi-navigation-close right"></i></span>
+            <p>R2-PG was a class project I created with a team in AI for Computer Games during the Spring of 2013. I was responsible for the
+              idea and a large portion of the implementation.  The idea was to build a fighting game with turn-based RPG mechanics.  We used n-gram
+              AI to prevent users from using repetitive attacks.  The opening screen allows you to create custom combos which cost stamina.  Each move can
+              be executed by clicking a number along the left-hand side.  We used Flash to create the animations and compiled them to JavaScript/HTML5 using
+              the CreateJS library.  KnockoutJS was also used for some of the variable bindings.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="portfolio/r2pg/" target="_blank">DEMO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/yuke_sm.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Yuke <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              Full Stack YouTube Jukebox
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Yuke <i class="mdi-navigation-close right"></i></span>
+            <p>
+              Yuke was built during an 18 hour hackathon at the University of Florida in Spring 2015. The idea was to create a 'YouTube jukebox' that would
+              allow a group of friends to queue up songs on a central screen connected to a sound system at a party.  Friends could simply use their phones to search YouTube
+              and build a playlist.  The application was built on Meteor, a full-stack JS framework with some unique isomorphic JavaScript properties.  The client side UI was
+              built on the Materialize CSS library.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="http://yuke.meteor.com/" target="_blank">DEMO</a>
+            <a href="assets/images/yuke.png" target="_blank">SCREENSHOT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12 m6">
+        <h4 class="white-text">Chris Cordle</h4>
+        <h5 class="white-text"><em>Software Engineer</em></h5>
+        <p class="grey-text text-lighten-4">
+          Thanks for checking me out!  Look me up using the links to the right or shoot me an email: <a href="mailto:ufcordle@hotmail.com">ufcordle@hotmail.com</a>.
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="http://www.linkedin.com/in/chriscordle" target="_blank">LinkedIn</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://github.com/chrisco255" target="_blank">Github</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://angel.co/chris-cordle" target="_blank">Angel.co</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://twitter.com/chrisco255" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Energy and persistence conquer all things.
+    </div>
   </div>
 </footer>
